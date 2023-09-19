@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.dht_SaleAppV1_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.dgh.pojo.ProdTag</class>
+    <class>com.dgh.pojo.Tag</class>
+    <class>com.dgh.pojo.SaleOrder</class>
+    <class>com.dgh.pojo.Product</class>
+    <class>com.dgh.pojo.User</class>
+    <class>com.dgh.pojo.OrderDetail</class>
+    <class>com.dgh.pojo.Category</class>
+    <class>com.dgh.pojo.TaiKhoan</class>
+    <class>com.dgh.pojo.ChiNhanh</class>
+    <class>com.dgh.pojo.HoaDonThanhToan</class>
+    <class>com.dgh.pojo.LoaiTiec</class>
+    <class>com.dgh.pojo.ThongTinSanh</class>
+    <class>com.dgh.pojo.DichVu</class>
+    <class>com.dgh.pojo.ThongTinChiTietDatTiec</class>
+    <class>com.dgh.pojo.ChucVu</class>
+    <class>com.dgh.pojo.PhieuDatBan</class>
+    <class>com.dgh.pojo.ThongTinChiTietKhachHangDatTiec</class>
+    <class>com.dgh.pojo.ThucDon</class>
+    <class>com.dgh.pojo.KhachHang</class>
+    <class>com.dgh.pojo.PhanHoiKhachHang</class>
+    <class>com.dgh.pojo.NhanVien</class>
+    <class>com.dgh.pojo.AnhSanh</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/saledb?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Giahuy@030102"/>
+    </properties>
+  </persistence-unit>
+</persistence>

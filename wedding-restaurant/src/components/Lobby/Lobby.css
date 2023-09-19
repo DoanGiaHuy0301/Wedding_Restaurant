@@ -1,0 +1,153 @@
+#amenities {
+    position: relative;
+    padding: 45px 0 15px 0;
+    text-align: center;
+}
+
+#amenities.home-amenities {
+    max-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#amenities.home-amenities:after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#amenities .container {
+    position: relative;
+    z-index: 1;
+}
+
+#amenities.home-amenities h2,
+#amenities.home-amenities h3,
+#amenities.home-amenities p {
+    color: #ffffff;
+}
+
+#amenities h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#amenities .icons {
+    margin-bottom: 30px;
+}
+
+#amenities .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.5s;
+}
+
+#amenities .icon.icon-1 {
+    background-image: url(../../image/icon/icon-building.png);
+}
+
+
+
+#amenities .icon.icon-2 {
+    background-image: url(../../image/icon/icon-hall-1.png);
+}
+
+
+
+#amenities .icon.icon-3 {
+    background-image: url(../../image/icon/icon-led-monitor.png);
+}
+
+
+#amenities .icon.icon-4 {
+    background-image: url(../../image/icon/icon-speakers.png);
+}
+
+
+
+#amenities .icon.icon-5 {
+    background-image: url(../../image/icon/icon-star.png);
+}
+
+
+
+#amenities .icon.icon-6 {
+    background-image: url(../../image/icon/icon-waiter.png);
+}
+
+
+.line-left, .line-right {
+    height: 1px;
+    background-color: #CF9F2A;
+    margin: 25px 0;
+}
+
+.section-title {
+    font-size: 2.7rem;
+}
+
+.container_lobby {
+    margin: 0 30px;
+}
+
+.carousel_img_lobby {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.lobby_titles {
+    padding-left: 80px;
+}
+
+.carousel_lobby {
+    position: relative;
+}
+
+.description_lobby {
+    position: absolute;
+    background-color: #F2E7C9;
+    z-index: 2;
+    right: 185px;
+    top: 100px;
+    width: 330px;
+    padding: 15px 18px;
+}
+
+.lobbyName {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #ccc;
+    color: #6E4E2A;
+    font-size: 17px;
+    text-align: left;
+}
+
+.divider {
+    width: 25%;
+    height: 1px;
+    background-color: #CF9F2A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.table_lobby { 
+    text-align: center;
+}
+
+.table_title_lobby {
+    background-color: #d5a429 !important;
+}
+
+

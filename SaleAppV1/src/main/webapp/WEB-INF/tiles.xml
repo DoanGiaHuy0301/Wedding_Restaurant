@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    
+    <!--Các trang loại tiệc-->
+    <definition name="loaiTiec" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý loại tiệc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/loaiTiec.jsp" />
+    </definition>
+     <definition name="themLoaiTiec" extends="baseLayout">
+        <put-attribute name="title" value="Loại tiệc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themLoaiTiec.jsp" />
+    </definition>
+    
+    <!--Các trang chi nhánh-->
+    <definition name="chiNhanh" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý chi nhánh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/chiNhanh.jsp" />
+    </definition>
+    <definition name="themChiNhanh" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý chi nhánh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themChiNhanh.jsp" />
+    </definition>
+    
+    <!--Các trang dịch vụ-->
+    <definition name="dichVu" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý dịch vụ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/dichVu.jsp" />
+    </definition>
+    <definition name="themDichVu" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý dịch vụ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themDichVu.jsp" />
+    </definition>
+    
+    <!--Các trang thông tin sảnh-->
+    <definition name="thongTinSanh" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sảnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/thongTinSanh.jsp" />
+    </definition>
+    <definition name="themSanh" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý sảnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themSanh.jsp" />
+    </definition>
+    
+    <!--Các trang nhân viên-->
+    <definition name="nhanVien" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nhân viên" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/nhanVien.jsp" />
+    </definition>
+    <definition name="themNhanVien" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý nhân viên" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themNhanVien.jsp" />
+    </definition>
+    
+    <!--Các trang thực đơn-->
+   <definition name="thucDon" extends="baseLayout">
+        <put-attribute name="title" value="Thực đơn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/thucDon.jsp" />
+    </definition>
+    <definition name="themThucDon" extends="baseLayout">
+        <put-attribute name="title" value="Thực đơn" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themThucDon.jsp" />
+    </definition>
+    
+    <!--Trang login-->
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    
+    <!--Trang ảnh sảnh-->
+    <definition name="anhSanh" extends="baseLayout">
+        <put-attribute name="title" value="Ảnh sảnh tiệc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/anhSanh.jsp" />
+    </definition>
+     <definition name="themAnhSanh" extends="baseLayout">
+        <put-attribute name="title" value="Ảnh sảnh tiệc" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/themAnhSanh.jsp" />
+    </definition>
+    
+    <!--Thống kê báo cáo-->
+    <definition name="thongKeSanh" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê sảnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/thongKeSanh.jsp" />
+    </definition>
+    <definition name="thongKeTiecCuoi" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê sảnh" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/thongKeTiecCuoi.jsp" />
+    </definition>
+    <definition name="thongKeDoanhThu" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê doanh thu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/thongKeDoanhThu.jsp" />
+    </definition>
+</tiles-definitions>
